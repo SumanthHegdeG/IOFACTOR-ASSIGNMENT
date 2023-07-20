@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Water Storage</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <div class="container">
+  <h1>Water Storage between Blocks</h1>
+  <div class="input-section">
+   <label for="blockHeights">Enter block heights (comma-separated): </label>
+   <input type="text" id="blockHeights" placeholder="e.g., 0,4,0,0,0,6,0,6,4,0">
+   <button onclick="calculateWater()">Calculate</button>
+  </div>
+  <div id="waterResult"></div>
+  <svg id="waterChart" width="600" height="300"></svg>
+ </div>
+ <script src="script.js"></script>
+</body>
+
+</html>
